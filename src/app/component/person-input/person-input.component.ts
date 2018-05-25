@@ -163,6 +163,8 @@ export class PersonInputComponent implements OnInit {
   hideErrorMessage() {
     this.showPersonNameError = false;
     this.showPersonCountryError = false;
+    this.showServiceSuccessMsg = false;
+    this.showServiceError = false;
   }
 
 
