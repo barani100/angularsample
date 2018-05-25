@@ -1,0 +1,16 @@
+<div ng-app="dashboard" class="container">
+  <div class="row m0 header">
+    <h1 class="heading pull-left">{{title}}</h1>
+  </div>
+
+  <div class="main-content bg-white">
+    <div class="main-tab-content">
+    <mat-tab-group class="main-tab-header">
+      <mat-tab label="Person Information">
+        <app-person-input></app-person-input>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

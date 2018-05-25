@@ -1,0 +1,58 @@
+<div class="example-header p25">
+  <h3>Persons List</h3>
+  <div class="row">
+    <div class="example-container mat-elevation-z8">
+      <div class="example-header">
+        <mat-form-field>
+          <input matInput (keyup)="applyPersonFilter($event.target.value)" placeholder="Filter">
+        </mat-form-field>
+
+        <mat-table #table [dataSource]="personListDataSource" matSort #sortForPersonDataSource="matSort">
+
+          <!-- Person ID -->`
+          <ng-container matColumnDef="personId">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Person ID </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+          </ng-container>
+
+          <!-- Person Name -->
+          <ng-container matColumnDef="personName">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Person Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+          </ng-container>
+
+          <!-- Person Country -->
+          <ng-container matColumnDef="personCountry">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Person Country </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.country}} </mat-cell>
+          </ng-container>
+
+          <!-- Edit Row Column -->
+          <ng-container matColumnDef="edit_row">
+            <mat-header-cell *matHeaderCellDef class="mat-column-row-actions"> Edit Person </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="toggle-edit mat-column-row-actions">
+              <button mat-button (click)="editPerson($event)" aria-label="edit">
+                <mat-icon aria-hidden="true">mode_edit</mat-icon>
+              </button>
+            </mat-cell>
+          </ng-container>
+
+          <!-- Delete Row Column -->
+          <ng-container matColumnDef="delete_row">
+            <mat-header-cell *matHeaderCellDef class="mat-column-row-actions"> Delete Person</mat-header-cell>
+            <mat-cell *matCellDef="let element" class="toggle-edit mat-column-row-actions">
+              <button mat-button (click)="deletePerson($event)" aria-label="delete">
+                <i class="material-icons">delete_forever</i>
+              </button>
+            </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+
+        <mat-paginator #paginatorForPersonDataSource [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+      </div>
+    </div>
+  </div>
+</div>

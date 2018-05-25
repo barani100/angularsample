@@ -1,0 +1,439 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:#35393d;
+    background-color: #f7f7f7;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+img {
+    border: 0;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after,
+.container:after,
+.row:after, .row {
+    clear: both;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  .col-12 {
+    width: 100%;
+}
+  .col-11 {
+    width: 91.66666667%;
+}
+  .col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+  .col-2 {
+    width: 16.66666667%;
+}
+  .col-1 {
+    width: 8.33333333%;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.media-left,
+.media-right,
+.media-body {
+display: table-cell;
+vertical-align: top;
+}
+.media-middle {
+vertical-align: middle;
+}
+.media-bottom {
+vertical-align: bottom;
+}
+.media-right {
+padding-left: 10px;
+}
+.media-left {
+padding-right: 10px;
+}
+.media-body-liquid {
+    width: 100%;
+}
+.bg-white {    
+    background-color: #ffffff;
+}
+.bg-light-green {
+    background-color: #f0f9e3;
+}
+.bg-light-blue {
+    background-color: #E6F3FA;
+}
+.p0 {
+    padding: 0;
+}
+.p25 {
+    padding: 25px;
+}
+.pt5 {
+    padding-top: 5px;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.pt15 {
+    padding-top: 15px;
+}
+.pb15 {
+    padding-bottom: 15px;
+}
+.m0 {
+    margin: 0;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+p {
+    margin: 0 0 10px;
+}
+.logo {
+    margin: 20px;
+}
+.header {
+    margin-bottom: 10px;
+}
+.main-content {
+    border: 1px solid #1F2963;
+    box-shadow: 0 -44px 0px 0 #58AEE0;
+    border-radius: 25px;
+    padding-bottom: 5px;
+    border-left-color: #58AEE0;
+    border-right-color: #58AEE0;
+    border-bottom-color: #58AEE0;
+}
+.campaign-panel {
+    padding: 35px 25px 30px;
+    border-radius: 25px 25px 0 0;
+    border-bottom: 1px solid #d2d5d7;
+}
+.heading {
+    color: #679b1a;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 20px 40px;
+}
+.boots-tabs {
+    margin: 0 40px;
+    padding: 0;
+}
+.boots-tabs > li {
+    float: left;
+    list-style-type: none;
+    margin-bottom: -1px;
+}
+.boots-tabs > li > a {
+    margin-right: 2px;
+    float: left;
+    padding: 5px 15px;
+    color:#ffffff;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+}
+.boots-tabs > li > a:hover, 
+.boots-tabs > li > a:focus {
+    border: 1px solid #49a4d8;
+    border-bottom-color: transparent;
+    background-color: #49a4d8;
+    color: #ffffff;
+}
+.boots-tabs > li.active > a,
+.boots-tabs > li.active > a:hover,
+.boots-tabs > li.active > a:focus {
+    border: 1px solid #1F2963;
+    border-bottom-color: transparent;
+    background-color: #E6F3FA;
+    color: #679b1a;
+}
+.boots-tabs > li.disabled a, .boots-tabs > li.disabled a:focus, .boots-tabs > li.disabled a:hover {
+    color: #B4B9BD;
+    cursor: default;
+}
+.form-caption {
+    font-size: 16px;
+    font-weight: bold;
+}
+label  {
+    font-weight: bold;
+    color: #555555;
+}
+.form-control {
+    border: 1px solid #d2d5d7;
+    height: 33px;
+    padding: 6px 5px;
+    border-radius: 4px;
+    width: 100%; 
+}
+.btn {
+    font-size: 14px;
+    padding: 6px 15px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0 3px 2px -2px #B1B3B6;
+    min-width: 100px;
+    height:33px;
+    border: 0;
+    cursor: pointer;
+}
+.btn:hover, .btn:focus {
+    border-color: transparent;
+    -webkit-box-shadow: 0 3px 2px -2px #B1B3B6;
+    box-shadow: 0 3px 2px -1px #B1B3B6;
+    border: 0;
+}
+.btn:active {
+    box-shadow: none;
+}
+.btn-default {    
+    background-color: #FAFBFB;
+    border: 1px solid #EAEBEB;
+    color: #236EA1;
+}
+.btn-blue {
+    background-color: #1a79af;
+    color: #ffffff;
+}
+.btn-green {
+    background-color: #086936;
+    color: #ffffff;
+}
+.arrow {
+    padding: 0 10px;
+    color: #000000;
+}
+.zone a {
+    font-weight: bold;
+    color: #58AEE0;
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+.zone a:hover, .zone a:focus {
+    text-decoration: underline;
+}
+.zone a.active, .zone a.active:active {
+    color: #679b1a;
+}
+.average-score, .average-score span, .average-score strong {
+    display: inline-block;
+}
+.average-score span, .average-score strong {
+    display: inline-block;
+    padding: 6px 10px;
+    font-weight: bold;
+    color: #555555;
+}
+.average-score {
+    border-radius: 20px;
+    border: 1px solid #d2d5d7;
+    margin-top: -6px;
+}
+.average-score strong {    
+    background-color: #24995a;
+    color: #ffffff;
+    border-radius: 20px;
+}
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #d2d5d7;    
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.6;
+    vertical-align: top;
+    border-top: 1px solid #d2d5d7;
+}
+.table > thead > tr > th {
+    border-bottom: 2px solid #d2d5d7;
+    background: #f3f4f4;
+    text-align: left;
+}
+.table > tbody > tr > td {
+    border-bottom: 1px solid #d2d5d7;
+}
+.table > tbody > tr:nth-child(even) {
+    background-color: #f4fbff;
+}
+.pagination {
+    margin: 0;
+    padding: 0;
+}
+.pagination li {
+    list-style-type: none;
+    display: inline-block;
+}
+.pagination li > a {
+    padding: 2px 7px;
+    border:1px solid #d2d5d7;
+    border-radius: 3px; 
+    display: inline-block;
+    color: #1F2963;
+}
+.pagination li > a:hover, .pagination li > a:focus, .pagination li.active > a:hover, .pagination li > a:active  {
+    background-color: #f0f9e3;
+}
+.pagination li.active > a:hover, .pagination li > a:active {
+    color: #679b1a;
+}
+.copyright {
+    font-size: 13px;
+    padding: 30px 0;
+}
+.tab-content>.tab-pane{
+    display: none;
+}
+.tab-content>.active {
+    display: block;
+}
+
+.main-tab-content{
+    margin-top: -47px;
+    padding-bottom: 45px;
+}
+.campaign-panel input {width: 100%;}
+/**
+* Material related css
+*/
+.mat-select, input.mat-input-element, .scheduler-date .mat-date-form-control
+	{
+	background-color: #ffffff;
+}
+
+.mat-date-form-control .mat-form-field-infix {
+	padding: 0 !important;
+}
+
+.wag-bg-light-grey {
+	background-color: #f5f6f7;
+}
+
+.main-tab-header .mat-tab-label-active, .main-tab-header .mat-tab-label:focus,
+	.main-tab-header .mat-tab-label-active:focus, .main-tab-header .mat-tab-label-active:active:focus
+	{
+	background-color: #f6fcff;
+	color: #01446b;
+	border-bottom: 2px solid #01446b;
+	border-radius: 15px 15px 0 0;
+}
+
+.mat-tab-header {
+	margin: 0 20px;
+}
+
+.main-tab-header .mat-tab-label {
+	opacity: 1;
+}
+
+.scheduler-result .mat-tab-header {
+	margin: 0;
+}
+
+.scheduler-result .mat-tab-label-active, .scheduler-result .mat-tab-label-active:active:focus
+	{
+	background-color: #679b1a;
+	color: #fff;
+	border-bottom: 2px solid #508405;
+}
+
+.scheduler-result .mat-tab-label {
+	opacity: 1;
+}
+
+.mat-tab-group.mat-primary .mat-tab-label:focus {
+	background-color: #679b1a;
+}
+
+.header .mat-tab-group.mat-primary .mat-tab-label:focus {
+	background-color: #5444e4;
+}

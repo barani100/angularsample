@@ -1,0 +1,49 @@
+<div class="campaign-panel bg-light-blue">
+  <div class="form-caption mb20">Add/Update Person</div>
+  <div class="row pb15">
+    <div *ngIf="showPersonId" class="col-2">
+      <label class="media-body media-middle">Id</label>
+      <div class="media-right media-body-liquid">
+        <input id="id" type="number" [(ngModel)]="personIdValue" [disabled]=true />
+      </div>
+    </div>
+    <div class="col-2">
+      <label class="media-body media-middle">Name</label>
+      <div class="media-right media-body-liquid">
+        <input id="name" type="text" [(ngModel)]="personNameValue" />
+      </div>
+      <div class="person-error-msg text-center mt20" *ngIf="showPersonNameError">
+        {{personNameErrorMsg}}
+      </div>
+    </div>
+    <div class="col-2">
+      <label class="media-body media-middle">Country</label>
+      <div class="media-right media-body-liquid">
+        <input id="country" type="text" [(ngModel)]="personCountryValue" />
+      </div>
+      <div class="person-error-msg text-center mt20" *ngIf="showPersonCountryError">
+        {{personCountryErrorMsg}}
+      </div>
+    </div>
+
+    <div class="text-right mt20">
+      <div *ngIf="showPersonId; then edit  else add"></div>
+      <ng-template #add>
+        <button mat-raised-button color="primary" (click)="addOrUpdatePerson($event,'POST')">Add</button>
+      </ng-template>
+      <ng-template #edit>
+        <button mat-raised-button color="primary" (click)="addOrUpdatePerson($event,'PUT')">Update</button>
+      </ng-template>
+      <div class="person-error-msg text-center mt20" *ngIf="showServiceError">
+        {{serviceErrorMsg}}
+      </div>
+      <div class="person-success-msg text-center mt20" *ngIf="showServiceSuccessMsg">
+        {{serviceSuccessMsg}}
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <!-- Child to parent data passing is passed through the below changes -->
+  <app-person-list [personId]=personId (editedPerson)="personEditedHandler($event)"></app-person-list>
+</div>
