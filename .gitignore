@@ -2,6 +2,7 @@
 *.class
 
 /node_modules
+/coverage
 
 # Log file
 *.log
